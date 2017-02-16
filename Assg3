@@ -1,0 +1,17 @@
+Components of Hadoop 1-x
+There are two major components:
+HDFS-Hadoop Distributed File System
+The Big Data is stored using commodity hardware and designed to work with large data sets having size 64 MB
+HDFS is again divided into:
+Name node-Placed in master node.Used to store metadata about the data nodes like the number of blocks stored in the data nodes
+Data node-Placed in slave node.Used to store actual application data.It stores data of size 64 MB
+
+
+
+Map Reduce-It is a distributed data processing and it uses commodity hardware to produce high volume of data and high velocity rate
+That is done in fault tolerant and relaiable manner
+It is again divided into:
+Job Tracker-It is uesd to assign the map reduce task to task trackers in the node cluster.It maintains status of task trackers like 
+recovered,failed,etc
+
+Task Tracker-executes the task which are assigned by the job tracker.
